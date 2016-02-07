@@ -10,8 +10,6 @@ object test {
   f("a")
   f("b")
   // f("c") // Fail
-
-
   /*
    * Test partial functions
    */
@@ -23,8 +21,6 @@ object test {
   g.isDefinedAt("a")
   g.isDefinedAt("b")
   g.isDefinedAt("c")
-
-
   val h: PartialFunction[List[Int], String] = {
     case Nil => "one"
     case x :: y :: rest => "two"
